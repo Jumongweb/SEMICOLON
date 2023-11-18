@@ -1,0 +1,14 @@
+public class Owner{
+
+String name;
+int age;
+
+public void laptopOwner(){
+
+System.out.println("The owner is Lawal Toheeb");
+}
+
+public static void nickName() {
+	System.out.println("Jumong);
+}
+}
