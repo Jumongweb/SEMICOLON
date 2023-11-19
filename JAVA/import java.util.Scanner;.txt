@@ -1,0 +1,31 @@
+import java.util.Scanner;
+
+public class TrianglePerimeter{
+public static void main(String[] args){
+
+Scanner scanner = new Scanner(System.in);
+System.out.println("Print first edge: ");
+int edge1 = scanner.nextInt();
+
+System.out.println("Print second edge: ");
+int edge2 = scanner.nextInt();
+
+System.out.println("Print third edge: ");
+int edge3 = scanner.nextInt();
+int perimeter = edge1 + edge2 + edge3;
+
+if (edge1 + egde2 > edge3){
+	System.out.print(perimeter);		
+}
+if (edge2 + egde3 > edge1){
+	System.out.print(perimeter);		
+}
+if (edge3 + egde1 > edge2){
+	System.out.print(perimeter);		
+}
+else{
+System.out.println("Invalid input");
+}
+
+}
+}
