@@ -1,0 +1,12 @@
+public class HumanTest{
+public static void main(String[] args){
+System.out.println(getName());
+Human human = new Human();
+
+human.setName("General");
+human.setAge(21);
+
+String name = human.getName();
+String age = human.getAge();
+}
+}

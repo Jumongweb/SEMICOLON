@@ -1,0 +1,10 @@
+public class TriangleOne{
+public static void main(String[] args){
+
+for(int hash = 0; hash <= 10; h++){
+	System.out.println("*");
+}
+
+
+}
+}

@@ -3,18 +3,25 @@ import java.util.Scanner;
 public class PyramidOfGiza{
 public static void main(String[] args){
 
-int minute = 1;
-int hour = 60;
-int day = 60 * 24;
-int year = day * 365;
+Scanner scanner = new Scanner(System.in);
+System.out.print("Estimated number of stone used: ");
+int numberOfStone = scanner.nextInt();
 
-int numberOfStone = 2300000;
-double weightByTon = 2.5;
-double allStoneWeight = 2.5 * 2300000;
-int yearToComplete = 20 * year;
+System.out.print("Average weight of each stone ");
+double weightByTon = scanner.nextDouble();
 
-System.out.println(allStoneWeight);
-System.out.println(yearToComplete);
+System.out.print("Number of years ");
+int yearToComplete = scanner.nextInt();
+
+double minute = 60 / 2.5;
+double hour = (60 * 24) * 2.5;
+double day = (hour * 24) * 2.5;
+double year = 365 * yearToComplete;
+
+double weight = 2.5;
+double allStoneWeight = numberOfStone * weight;
+
+System.out.println("Weight " + year);
 
 }
 }
