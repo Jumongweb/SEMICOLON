@@ -8,20 +8,21 @@ System.out.print("Estimated number of stone used: ");
 int numberOfStone = scanner.nextInt();
 
 System.out.print("Average weight of each stone ");
-double weightByTon = scanner.nextDouble();
+double weightPerStone = scanner.nextDouble();
 
 System.out.print("Number of years ");
 int yearToComplete = scanner.nextInt();
 
-double minute = 60 / 2.5;
-double hour = (60 * 24) * 2.5;
-double day = (hour * 24) * 2.5;
-double year = 365 * yearToComplete;
+double allStoneWeight = numberOfStone * weightPerStone;
+double eachYear = allStoneWeight / yearToComplete;
+double eachHour = eachYear / (yearToComplete * 365 * 24);
+double eachMinute = eachHour / 60;
 
-double weight = 2.5;
-double allStoneWeight = numberOfStone * weight;
+System.out.printf("Each year: %.2f%n", eachYear);
+System.out.printf("Each hour: %.2f%n", eachHour);
+System.out.printf("Each minute: %.2f%n", eachMinute);
 
-System.out.println("Weight " + year);
+
 
 }
 }

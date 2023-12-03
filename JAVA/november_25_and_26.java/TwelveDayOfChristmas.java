@@ -8,7 +8,6 @@ int daysOfChristmas = scanner.nextInt();
 switch (daysOfChristmas){
 case 1:
 	System.out.println("On the first day of Christmas My true love sent to me");
-	System.out.println("A partridge in a pear tree.");
 	break;
 case 2:
 	System.out.println("On the second day of Christmas My true love sent to me");
@@ -47,6 +46,11 @@ case 12:
 
 System.out.print("Enter number again to view the gift: ");
 int giftOfChristmas = scanner.nextInt();
+while (daysOfChristmas != giftOfChristmas){
+System.out.print("Enter number again to view the gift: ");
+giftOfChristmas = scanner.nextInt();
+
+if (daysOfChristmas == giftOfChristmas){
 switch (giftOfChristmas){
 case 1:
 	System.out.println("A partridge in a pear tree.");
@@ -84,9 +88,10 @@ case 11:
 case 12:
 	System.out.println("Twelve drummers drumming, Eleven pipers piping, Ten lords a-leaping, Nine ladies dancing, Eight maids a-milking, Seven swans a-swimming, Six geese a-laying, Five golden rings, Four calling birds, Three French hens, Two turtle doves And a partridge in a pear tree.");
 	break;
-
 }
 
+} 
+}
 
 }
 }
