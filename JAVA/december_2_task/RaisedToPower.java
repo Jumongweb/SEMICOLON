@@ -6,18 +6,14 @@ System.out.print("Enter first number: ");
 int number1 = scanner.nextInt();
 System.out.print("Enter first number: ");
 int number2 = scanner.nextInt();
-int power = 0;
+int power = 1;
 int count = 0;
 
-for (int i = 0; i < number2; i++){
-	power = number1 * number2;
+while (count != number2) {
+	power *= number1;
 	count++;
 }
-int pow = power * count;
 
-System.out.println(power);
-System.out.println(count);
-System.out.println(pow);
-
+System.out.printf("%d raised to power %d is %d", number1, number2, power);
 }
 }
