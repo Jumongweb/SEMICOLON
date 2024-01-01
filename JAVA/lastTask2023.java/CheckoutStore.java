@@ -2,12 +2,12 @@ import java.util.ArrayList;
 import java.util.Scanner;
 
 public class CheckoutStore{
-    public static ArrayList<String> itemBoughtList = new ArrayList<>();
-    public static ArrayList<Integer> quantityList = new ArrayList<>();
-    public static ArrayList<Double> itemPriceList = new ArrayList<>();
-    public static ArrayList<Double> priceTotal = new ArrayList<>();
-    public static String cashierName;
-    public static double discount;
+    private static ArrayList<String> itemBoughtList = new ArrayList<>();
+    private static ArrayList<Integer> quantityList = new ArrayList<>();
+    private static ArrayList<Double> itemPriceList = new ArrayList<>();
+    private static ArrayList<Double> priceTotal = new ArrayList<>();
+    private static String cashierName;
+    private static double discount;
 
     public static void main(String[] args){
 	double itemSum = 0;
