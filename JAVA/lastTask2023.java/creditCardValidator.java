@@ -1,7 +1,7 @@
 import java.util.Scanner;
 import java.util.Arrays;
 
-public class CreditCardValidator2{
+public class CreditCardValidator{
    public static String cardType;
    public static String cardValidity;
 
@@ -60,4 +60,3 @@ public class CreditCardValidator2{
 	System.out.println("**Credit Card Validity Status: " + cardValidity);
 	System.out.println("*****************************************");
    }
-}
