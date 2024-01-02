@@ -2,8 +2,8 @@ import java.util.Scanner;
 import java.util.Arrays;
 
 public class CreditCardValidator{
-   public static String cardType;
-   public static String cardValidity;
+   private static String cardType;
+   private static String cardValidity;
 
    public static void main(String[] args){
 	Scanner scanner = new Scanner(System.in);
@@ -60,3 +60,4 @@ public class CreditCardValidator{
 	System.out.println("**Credit Card Validity Status: " + cardValidity);
 	System.out.println("*****************************************");
    }
+}
