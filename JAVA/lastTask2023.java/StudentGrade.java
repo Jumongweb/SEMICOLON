@@ -29,6 +29,12 @@ public class StudentGrade{
 			System.out.printf("Enter score for subject %d%n", index2 + 1);
 		
 			subjectArray[index][index2] = scanner.nextInt();
+			while (subjectArray[index][index2] < 0 || subjectArray[index][index2] > 100){
+				System.out.println("You score should be between 0 and 100");
+				System.out.printf("Entering score for student %d%n", index + 1);
+				System.out.printf("Enter score for subject %d%n", index2 + 1);
+				subjectArray[index][index2] = scanner.nextInt();
+			}
 			saveDisplay();
 		}
 		System.out.println();
